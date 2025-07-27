@@ -1,0 +1,48 @@
+{
+    "name": "ds_source_data",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "ls_blob_to_sql_db",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobStorageLocation",
+                "fileName": "Sales_Raw_Data.csv",
+                "container": "input"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "OrderID",
+                "type": "String"
+            },
+            {
+                "name": "OrderDate",
+                "type": "String"
+            },
+            {
+                "name": "CustomerName",
+                "type": "String"
+            },
+            {
+                "name": "ProductName",
+                "type": "String"
+            },
+            {
+                "name": "Quantity",
+                "type": "String"
+            },
+            {
+                "name": "UnitPrice",
+                "type": "String"
+            }
+        ]
+    }
+}
