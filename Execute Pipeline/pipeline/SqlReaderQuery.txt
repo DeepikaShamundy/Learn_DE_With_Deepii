@@ -1,0 +1,1 @@
+SELECT * FROM Sales_Staging WHERE UnitPrice > 50

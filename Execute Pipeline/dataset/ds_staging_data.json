@@ -1,0 +1,45 @@
+{
+    "name": "ds_staging_data",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "ls_sql_db",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "OrderID",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "OrderDate",
+                "type": "date"
+            },
+            {
+                "name": "CustomerName",
+                "type": "nvarchar"
+            },
+            {
+                "name": "ProductName",
+                "type": "nvarchar"
+            },
+            {
+                "name": "Quantity",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "UnitPrice",
+                "type": "decimal",
+                "precision": 10,
+                "scale": 2
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "Sales_Staging"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Execute Pipeline1",
+    "type": "ExecutePipeline",
+    "dependsOn": [],
+    "policy": {
+        "secureInput": false
+    },
+    "userProperties": [],
+    "typeProperties": {
+        "pipeline": {
+            "referenceName": "LoadToStagingPipeline",
+            "type": "PipelineReference"
+        },
+        "waitOnCompletion": true
+    }
+}
