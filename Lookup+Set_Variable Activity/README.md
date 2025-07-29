@@ -37,6 +37,6 @@ Assigns it to a variable called customerNameVar.
 This value can then be used in subsequent activities (e.g., filtering, logging, or conditional flows).
 
 Note : 
-Lookup Settings: In Lookup, First Row only Checkbox enabled by default remove it to get all the rows 
+Lookup Settings - In Lookup, First Row only Checkbox enabled by default remove it to get all the rows 
 
 
