@@ -1,0 +1,55 @@
+{
+    "name": "pipeline1",
+    "properties": {
+        "activities": [
+            {
+                "name": "Append variable1",
+                "type": "AppendVariable",
+                "dependsOn": [],
+                "userProperties": [],
+                "typeProperties": {
+                    "variableName": "skill",
+                    "value": "AZURE"
+                }
+            },
+            {
+                "name": "Set variable1",
+                "type": "SetVariable",
+                "dependsOn": [
+                    {
+                        "activity": "Append variable1",
+                        "dependencyConditions": [
+                            "Completed"
+                        ]
+                    }
+                ],
+                "policy": {
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "variableName": "NEW_SKILLS",
+                    "value": {
+                        "value": "@variables('skill')",
+                        "type": "Expression"
+                    }
+                }
+            }
+        ],
+        "variables": {
+            "skill": {
+                "type": "Array",
+                "defaultValue": [
+                    "SQL",
+                    "PYTHON",
+                    "JAVA"
+                ]
+            },
+            "NEW_SKILLS": {
+                "type": "Array"
+            }
+        },
+        "annotations": []
+    }
+}
