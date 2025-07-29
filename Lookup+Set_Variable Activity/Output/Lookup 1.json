@@ -1,0 +1,66 @@
+{
+	"count": 5,
+	"value": [
+		{
+			"OrderID": "1001",
+			"OrderDate": "2024-07-01",
+			"CustomerName": "Alice",
+			"ProductName": "Monitor",
+			"Quantity": "2",
+			"UnitPrice": "150"
+		},
+		{
+			"OrderID": "1002",
+			"OrderDate": "2024-07-02",
+			"CustomerName": "Bob",
+			"ProductName": "Keyboard",
+			"Quantity": "5",
+			"UnitPrice": "30"
+		},
+		{
+			"OrderID": "1003",
+			"OrderDate": "2024-07-03",
+			"CustomerName": "Charlie",
+			"ProductName": "Laptop",
+			"Quantity": "1",
+			"UnitPrice": "900"
+		},
+		{
+			"OrderID": "1004",
+			"OrderDate": "2024-07-04",
+			"CustomerName": "David",
+			"ProductName": "Mouse",
+			"Quantity": "3",
+			"UnitPrice": "25"
+		},
+		{
+			"OrderID": "1005",
+			"OrderDate": "2024-07-05",
+			"CustomerName": "Eva",
+			"ProductName": "Webcam",
+			"Quantity": "2",
+			"UnitPrice": "75.5"
+		}
+	],
+	"effectiveIntegrationRuntime": "AutoResolveIntegrationRuntime (East US)",
+	"billingReference": {
+		"activityType": "PipelineActivity",
+		"billableDuration": [
+			{
+				"meterType": "AzureIR",
+				"duration": 0.016666666666666666,
+				"unit": "Hours"
+			}
+		],
+		"totalBillableDuration": [
+			{
+				"meterType": "AzureIR",
+				"duration": 0.016666666666666666,
+				"unit": "Hours"
+			}
+		]
+	},
+	"durationInQueue": {
+		"integrationRuntimeQueue": 0
+	}
+}
