@@ -1,0 +1,24 @@
+{
+    "name": "ds_sql_customer",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "ls_sql_customer",
+            "type": "LinkedServiceReference"
+        },
+        "parameters": {
+            "TableName": {
+                "type": "string"
+            }
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [],
+        "typeProperties": {
+            "schema": "",
+            "table": {
+                "value": "@dataset().TableName",
+                "type": "Expression"
+            }
+        }
+    }
+}

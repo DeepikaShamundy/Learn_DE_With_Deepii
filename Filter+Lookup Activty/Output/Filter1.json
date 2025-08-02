@@ -1,0 +1,16 @@
+{
+	"ItemsCount": 10,
+	"FilteredItemsCount": 2,
+	"Value": [
+		{
+			"CustomerID": "100",
+			"CustomerName": "Deepika",
+			"Country": "India"
+		},
+		{
+			"CustomerID": "101",
+			"CustomerName": "Hariharan",
+			"Country": "India"
+		}
+	]
+}

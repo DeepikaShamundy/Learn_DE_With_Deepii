@@ -1,0 +1,31 @@
+{
+    "name": "ds_customer_blob",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "ls_customer_blob",
+            "type": "LinkedServiceReference"
+        },
+        "parameters": {
+            "FileName": {
+                "type": "string"
+            }
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobStorageLocation",
+                "fileName": {
+                    "value": "@dataset().FileName",
+                    "type": "Expression"
+                },
+                "container": "customer-details"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": []
+    }
+}

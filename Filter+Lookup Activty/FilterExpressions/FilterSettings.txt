@@ -1,0 +1,3 @@
+Items: @activity('Lookup1').output.value
+
+Condition: @equals(item().Country, pipeline().parameters.CountryName)

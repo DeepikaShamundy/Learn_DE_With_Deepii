@@ -1,0 +1,76 @@
+{
+	"count": 10,
+	"value": [
+		{
+			"CustomerID": "100",
+			"CustomerName": "Deepika",
+			"Country": "India"
+		},
+		{
+			"CustomerID": "101",
+			"CustomerName": "Hariharan",
+			"Country": "India"
+		},
+		{
+			"CustomerID": "102",
+			"CustomerName": "Biden",
+			"Country": "USA"
+		},
+		{
+			"CustomerID": "103",
+			"CustomerName": "Donald Trump",
+			"Country": "USA"
+		},
+		{
+			"CustomerID": "104",
+			"CustomerName": "David Warer",
+			"Country": "Australia"
+		},
+		{
+			"CustomerID": "105",
+			"CustomerName": "Williamson",
+			"Country": "Newzealand"
+		},
+		{
+			"CustomerID": "106",
+			"CustomerName": "Chris Gayle",
+			"Country": "WestIndies"
+		},
+		{
+			"CustomerID": "107",
+			"CustomerName": "Ab Devillers",
+			"Country": "South Africa"
+		},
+		{
+			"CustomerID": "108",
+			"CustomerName": "Joe Root",
+			"Country": "England"
+		},
+		{
+			"CustomerID": "109",
+			"CustomerName": "Aiden Markram",
+			"Country": "South Africa"
+		}
+	],
+	"effectiveIntegrationRuntime": "AutoResolveIntegrationRuntime (East US)",
+	"billingReference": {
+		"activityType": "PipelineActivity",
+		"billableDuration": [
+			{
+				"meterType": "AzureIR",
+				"duration": 0.016666666666666666,
+				"unit": "Hours"
+			}
+		],
+		"totalBillableDuration": [
+			{
+				"meterType": "AzureIR",
+				"duration": 0.016666666666666666,
+				"unit": "Hours"
+			}
+		]
+	},
+	"durationInQueue": {
+		"integrationRuntimeQueue": 10
+	}
+}
