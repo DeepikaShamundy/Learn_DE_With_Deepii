@@ -1,0 +1,26 @@
+{
+    "name": "ds_blob_sales",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "ls_blob_sales",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobStorageLocation",
+                "fileName": {
+                    "value": "@concat('Sales_',formatDateTime(utcNow(),'dd-MMM-yyyy'),'.CSV')",
+                    "type": "Expression"
+                },
+                "container": "sales"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": []
+    }
+}

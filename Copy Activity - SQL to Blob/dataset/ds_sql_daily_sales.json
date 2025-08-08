@@ -1,0 +1,45 @@
+{
+    "name": "ds_sql_Daily_Sales",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "ls_sql_db",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "SaleID",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "ProductName",
+                "type": "nvarchar"
+            },
+            {
+                "name": "Category",
+                "type": "nvarchar"
+            },
+            {
+                "name": "Quantity",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "UnitPrice",
+                "type": "decimal",
+                "precision": 10,
+                "scale": 2
+            },
+            {
+                "name": "SaleDate",
+                "type": "date"
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "DailySales"
+        }
+    }
+}
