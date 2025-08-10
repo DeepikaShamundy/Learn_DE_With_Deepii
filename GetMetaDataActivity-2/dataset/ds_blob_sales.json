@@ -1,0 +1,47 @@
+{
+    "name": "ds_get_meta_data",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "ls_get_meta_data_pipeline",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobStorageLocation",
+                "container": "input"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "EmployeeID",
+                "type": "String"
+            },
+            {
+                "name": "FullName",
+                "type": "String"
+            },
+            {
+                "name": "Department",
+                "type": "String"
+            },
+            {
+                "name": "Designation",
+                "type": "String"
+            },
+            {
+                "name": "HireDate",
+                "type": "String"
+            },
+            {
+                "name": "AnnualSalary",
+                "type": "String"
+            }
+        ]
+    }
+}
