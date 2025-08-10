@@ -1,0 +1,32 @@
+{
+	"isWildcardUsed": false,
+	"maxConcurrentConnections": 10,
+	"filesDeleted": 6,
+	"seekableDetectionTimeoutInSeconds": "",
+	"fixWrongLastModifyInCrossMachine": true,
+	"type": "DelimitedText",
+	"recursive": true,
+	"enablePartitionDiscovery": false,
+	"folderPath": "sales",
+	"EnableTabularSourceWorkingDurationFix": true,
+	"datasetName": "ds_blob_delete_sales",
+	"enableFileFilter": true,
+	"ActivityId": "f142dc80-4058-4196-8e2b-bd94b4849c0a",
+	"TransferId": "f142dc80-4058-4196-8e2b-bd94b4849c0a",
+	"logPath": "https://mystoragefordata.blob.core.windows.net/deleted-files/f142dc80-4058-4196-8e2b-bd94b4849c0a/",
+	"effectiveIntegrationRuntime": "AutoResolveIntegrationRuntime (East US)",
+	"executionDuration": 0,
+	"durationInQueue": {
+		"integrationRuntimeQueue": 10
+	},
+	"billingReference": {
+		"activityType": "PipelineActivity",
+		"billableDuration": [
+			{
+				"meterType": "AzureIR",
+				"duration": 0.016666666666666666,
+				"unit": "Hours"
+			}
+		]
+	}
+}

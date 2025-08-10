@@ -6,18 +6,18 @@ This pipeline validates the presence and size of multiple incoming sales CSV fil
 🛠️ Configuration Details
 
 
-| Component                | Value / Type                                                                                                                                                        |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Component                | Value / Type                                                                                                                          |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Variable**             | `IncomingSalesFile` (Array) ["Store1_Sales.csv", "Store2_Sales.csv", "Store3_Sales.csv"]      
-                                                               |
-| **Loop Mechanism**       | ForEach → @variables('IncomingSalesFile')                                                                                                                        |
-| **Metadata Dataset**     | `ds_sales_store_files` (parameterized dataset with `FileName` parameter)                                                                                            |
+|
+| **Loop Mechanism**       | ForEach → @variables('IncomingSalesFile')                                                                                             |
+| **Metadata Dataset**     | `ds_sales_store_files` (parameterized dataset with `FileName` parameter)                                                              |
 | **File Path in Dataset** | @dataset().FileName`                                                                          
-                                                                     |
-| **Get Metadata Fields**  | `exists`, `size`, `itemName`                                                                                                                                        |
-| **IF Condition Expression Check ** | @and(activity('Get Metadata1').output.exists, greater(activity('Get Metadata1').output.size, 0))                                                                 |
-| **True Branch**          | Copy Activity → Source: `ds_sales_store_files` (filename: @activity('Get Metadata1').output.itemName) → Sink: `ds_output_blob` (points to `output-sales/` folder) |
-| **False Branch**         | Set Variable → @concat(activity('Get Metadata1').output.itemName, ' is missing or size less than zero')                                                           |
+|
+| **Get Metadata Fields**  | `exists`, `size`, `itemName`                                                                                                          |
+| **IF Condition Expression Check ** | @and(activity('Get Metadata1').output.exists, greater(activity('Get Metadata1').output.size, 0))                            |
+| **True Branch**          | Copy Activity → Source: `ds_sales_store_files` (filename: @activity('Get Metadata1').output.itemName) → Sink: `ds_output_blob` (points to `output-sales/` folder) 																			   |
+| **False Branch**         | Set Variable → @concat(activity('Get Metadata1').output.itemName, ' is missing or size less than zero')                               |
 
 
 
@@ -46,7 +46,7 @@ Copies the file from the source dataset to the output-sales folder using ds_outp
 
 False Path (Invalid File)
 
-Appends a message to a variable stating the file is missing or has size zero.
+Use Delete activity to delete the file which size = 0
 
 📁 Files Included
 File	Purpose

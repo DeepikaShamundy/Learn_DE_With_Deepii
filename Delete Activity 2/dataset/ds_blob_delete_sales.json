@@ -1,0 +1,22 @@
+{
+    "name": "ds_blob_delete_sales",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "ls_blob_delete_sales",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobStorageLocation",
+                "container": "sales"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": []
+    }
+}
