@@ -1,0 +1,24 @@
+{
+    "name": "ds_blob_sales",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "ls_blob_sales",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobStorageLocation",
+                "fileName": "Sales_Raw_Data.csv",
+                "container": "sales"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": []
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

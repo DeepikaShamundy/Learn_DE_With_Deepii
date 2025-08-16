@@ -1,0 +1,6 @@
+OrderID,OrderDate,CustomerName,ProductName,Quantity,UnitPrice
+1001,01-07-2024,Alice,Monitor,2,150
+1002,02-07-2024,Bob,Keyboard,5,30
+1003,03-07-2024,Charlie,Laptop,1,900
+1004,04-07-2024,David,Mouse,3,25
+1005,05-07-2024,Eva,Webcam,2,75.5

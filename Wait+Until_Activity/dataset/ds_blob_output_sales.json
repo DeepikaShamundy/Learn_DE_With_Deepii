@@ -1,0 +1,22 @@
+{
+    "name": "ds_blob_output_sales",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "ls_blob_sales",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobStorageLocation",
+                "container": "sales-output"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": []
+    }
+}
