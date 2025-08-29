@@ -1,0 +1,68 @@
+{
+    "name": "ds_sales_blob",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "ls_sales_blob",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobStorageLocation",
+                "fileName": "Daily_Sales.csv",
+                "container": "source"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "TransactionID",
+                "type": "String"
+            },
+            {
+                "name": "TransactionDate",
+                "type": "String"
+            },
+            {
+                "name": "CustomerID",
+                "type": "String"
+            },
+            {
+                "name": "StoreID",
+                "type": "String"
+            },
+            {
+                "name": "ProductID",
+                "type": "String"
+            },
+            {
+                "name": "Quantity",
+                "type": "String"
+            },
+            {
+                "name": "Price",
+                "type": "String"
+            },
+            {
+                "name": "TotalAmount",
+                "type": "String"
+            },
+            {
+                "name": "PaymentType",
+                "type": "String"
+            },
+            {
+                "name": "LoadDate",
+                "type": "String"
+            },
+            {
+                "name": "ProcessedDate",
+                "type": "String"
+            }
+        ]
+    }
+}

@@ -1,0 +1,68 @@
+{
+    "name": "ds_sql_db",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "ls_sql_db",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "TransactionID",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "TransactionDate",
+                "type": "timestamp"
+            },
+            {
+                "name": "CustomerID",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "StoreID",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "ProductID",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "Quantity",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "Price",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "TotalAmount",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "PaymentType",
+                "type": "varchar"
+            },
+            {
+                "name": "LoadDate",
+                "type": "date"
+            },
+            {
+                "name": "ProcessedDate",
+                "type": "date"
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "sales"
+        }
+    }
+}
