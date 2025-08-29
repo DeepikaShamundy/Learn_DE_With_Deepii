@@ -1,0 +1,53 @@
+{
+    "name": "ds_orders_blob",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "ls_orders_blob",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobStorageLocation",
+                "fileName": "Ordersnew.csv",
+                "container": "source"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "OrderID",
+                "type": "String"
+            },
+            {
+                "name": "CustomerName",
+                "type": "String"
+            },
+            {
+                "name": "ProductID",
+                "type": "String"
+            },
+            {
+                "name": "OrderAmount",
+                "type": "String"
+            },
+            {
+                "name": "OrderDate",
+                "type": "String"
+            },
+            {
+                "name": "Region",
+                "type": "String"
+            },
+            {
+                "name": "TotalSpent",
+                "type": "String"
+            }
+        ]
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}
