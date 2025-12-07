@@ -1,0 +1,3 @@
+SaleID,CustomerID,Product,Amount,Region
+401,3,Tablet,600,EMEA
+402,3,Phone,700,EMEA
