@@ -1,0 +1,4 @@
+OrderID,CustomerID,Product,Amount
+1001,1,Laptop,1200
+1002,2,Phone,800
+1003,3,Tablet,600

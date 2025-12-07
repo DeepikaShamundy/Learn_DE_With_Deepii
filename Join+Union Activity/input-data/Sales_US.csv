@@ -1,0 +1,3 @@
+SaleID,CustomerID,Product,Amount,Region
+301,2,Phone,800,US
+302,5,Laptop,1500,US
